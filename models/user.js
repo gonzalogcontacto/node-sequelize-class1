@@ -1,6 +1,7 @@
 'use strict';
 import pkg from 'sequelize';
 import database  from "../database.js";
+import { Order } from './order.js';
 
 const { Model, DataTypes } = pkg;
 
@@ -22,4 +23,6 @@ User.init({
   modelName: "User",
   sequelize: database,
 });
+
+
 
